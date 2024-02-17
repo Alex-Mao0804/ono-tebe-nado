@@ -1,1 +1,372 @@
 /* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 148px 1fr;
+  align-items: center;
+  padding: 92px 24px;
+}
+.header__menu {
+  padding-left: 26.52px;
+}
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 32px;
+  list-style: circle;
+}
+
+.header__links-list-item {
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+.header__link_active {
+  border-bottom: none;
+}
+
+.header__logo {
+  
+}
+
+.header_logo_image {
+  width: 148px;
+  height: 105px;
+}
+
+.header__address {
+  padding-left: 186.7px;
+}
+
+.cover {
+  position: relative;
+  z-index: -2;
+  min-height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.6;
+  background-color: #000;
+  background-position: center;
+}
+
+.cover__title {
+  padding: 165px 50px 147px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.15;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  display: block;
+  /* text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
+}
+
+.aligned-text_center {
+  padding-top: 20px;
+  line-height: 1;
+  text-align: center;
+}
+
+.aligned-text_right {
+  padding-top: 20px;
+  line-height: 1;
+  text-align: right;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.letter-spacing-default {
+  letter-spacing: 0.3em;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+
+.cover__description-text {
+  padding-left: 28px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 127%;
+  text-transform: uppercase;
+  word-spacing: 19px;
+}
+
+.bet-button {
+  width: 256px;
+  height: 51px;
+  margin-top: -12px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+.letter-spacing-extended-v {
+  letter-spacing: 1.1em;
+}
+
+.word-spacing {
+  word-spacing: 18px;
+}
+
+.lots {
+  padding: 179px 24px 0;
+}
+
+.lots__heading {
+  padding-left: 40px;
+  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 27px;
+}
+
+.lots__card-list-item {
+  flex-grow: 1;
+  width: 334px;
+  min-height: 563px;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 51px 40px 48px;
+}
+
+.card_type_film {
+  position: relative;
+  z-index: -2;
+  background-image: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_book {
+  position: relative;
+  z-index: -2;
+  background-image: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_picture {
+  position: relative;
+  z-index: -2;
+  background-image: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card__title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+}
+
+.card__text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.points {
+  letter-spacing: 0.13em;
+}
+
+.lots__look-more-link {
+  display: block;
+  padding-top: 30px;
+  padding-left: 40px;
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+  text-underline-offset: 3px;
+}
+
+.about {
+  padding: 146px 24px 0;
+}
+
+.about__column {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  gap: 25px;
+}
+
+.about__logo-center {
+  padding-top: 35px;
+  padding-left: 47px;
+}
+
+.about__logo {
+  display: flex;
+  width: 240px;
+  height: 240px;
+  border-radius: 100%;
+  background-color: #000;
+}
+
+.about__logo-image {
+  display: block;
+  width: 148px;
+  height: 114px;
+  margin: auto;
+}
+
+.about__title {
+  padding-top: 136px;
+  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 100px;
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+}
+
+.about-letter-spacing-01em {
+  letter-spacing: 0.01em;
+}
+
+.about-letter-spacing-02em {
+  letter-spacing: 0.02em;
+}
+
+.about-letter-spacing-03em {
+  letter-spacing: 0.03em;
+}
+
+.about-letter-spacing-Minus01em {
+  letter-spacing: -0.01em;
+}
+
+.about-letter-spacing-04em {
+  letter-spacing: 0.04em;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 180px 50px 88px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 135%;
+  letter-spacing: 0.01em;
+}
+
+.address-text-decoration {
+  text-underline-offset: 4px;
+}
+
+.footer__menu {
+}
+
+.footer__menu-list {
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  list-style: none;
+}
+
+.footer__menu-list-item {
+}
+
+.footer__menu-link {
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+.footer__menu-link_active {
+  border-bottom: none;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-start;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-list-item {
+}
+
+.footer__social-link {
+  display: block;
+  width: 48px;
+}
+
+.footer__social-icon {
+}
