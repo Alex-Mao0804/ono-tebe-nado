@@ -6,11 +6,10 @@
   padding: 92px 24px;
 }
 .header__menu {
-  padding-left: 26.52px;
+  padding-left: 27px;
 }
 .header__links-list {
   display: flex;
-  flex-direction: row;
   align-items: center;
   column-gap: 32px;
   list-style: circle;
@@ -36,22 +35,17 @@
   border-bottom: none;
 }
 
-.header__logo {
-  
-}
-
 .header_logo_image {
   width: 148px;
   height: 105px;
 }
 
 .header__address {
-  padding-left: 186.7px;
+  padding-left: 187px;
 }
 
 .cover {
-  position: relative;
-  z-index: -2;
+  z-index: 0;
   min-height: 757px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
@@ -60,6 +54,11 @@
 }
 
 .overlay {
+  position: relative;
+}
+
+.overlay::before {
+  content: "";
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -80,7 +79,6 @@
 
 .aligned-text {
   display: block;
-  /* text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
 }
 
 .aligned-text_center {
@@ -158,7 +156,7 @@
 
 .lots__card-list {
   display: flex;
-  flex-direction: row;
+
   flex-wrap: wrap;
   gap: 25px;
   padding-top: 27px;
@@ -180,8 +178,7 @@
 }
 
 .card_type_film {
-  position: relative;
-  z-index: -2;
+  z-index: 0;
   background-image: url(../images/card-lot-01.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -189,8 +186,7 @@
 }
 
 .card_type_book {
-  position: relative;
-  z-index: -2;
+  z-index: 0;
   background-image: url(../images/card-lot-02.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -198,8 +194,7 @@
 }
 
 .card_type_picture {
-  position: relative;
-  z-index: -2;
+  z-index: 0;
   background-image: url(../images/card-lot-03.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -328,18 +323,12 @@
   text-underline-offset: 4px;
 }
 
-.footer__menu {
-}
-
 .footer__menu-list {
   color: #000;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
   list-style: none;
-}
-
-.footer__menu-list-item {
 }
 
 .footer__menu-link {
@@ -353,20 +342,13 @@
 
 .footer__social-list {
   display: flex;
-  flex-direction: row;
   justify-content: end;
   align-items: flex-start;
   gap: 48px;
   list-style: none;
 }
 
-.footer__social-list-item {
-}
-
 .footer__social-link {
   display: block;
   width: 48px;
-}
-
-.footer__social-icon {
 }
