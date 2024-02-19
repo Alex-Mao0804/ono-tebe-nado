@@ -45,6 +45,7 @@
 }
 
 .cover {
+  position: relative;
   z-index: 0;
   min-height: 757px;
   background-image: url(../images/cover.jpg);
@@ -54,11 +55,6 @@
 }
 
 .overlay {
-  position: relative;
-}
-
-.overlay::before {
-  content: "";
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -68,7 +64,7 @@
 }
 
 .cover__title {
-  padding: 165px 50px 147px;
+  padding: 165px 50px 135px;
   color: #fff;
   font-weight: 700;
   font-size: 100px;
@@ -81,15 +77,16 @@
   display: block;
 }
 
-.aligned-text_center {
+.aligned-text-general {
   padding-top: 20px;
   line-height: 1;
+}
+
+.aligned-text_center {
   text-align: center;
 }
 
 .aligned-text_right {
-  padding-top: 20px;
-  line-height: 1;
   text-align: right;
 }
 
@@ -112,19 +109,19 @@
 }
 
 .cover__description-text {
+  align-self: center;
   padding-left: 28px;
   color: #fff;
   font-weight: 400;
   font-size: 22px;
   line-height: 127%;
   text-transform: uppercase;
-  word-spacing: 19px;
+  word-spacing: 18px;
 }
 
 .bet-button {
   width: 256px;
-  height: 51px;
-  margin-top: -12px;
+  min-height: 51px;
   border: 1px solid #fff;
   color: #fff;
   font-weight: 500;
@@ -132,14 +129,6 @@
   text-align: center;
   text-transform: uppercase;
   background: transparent;
-}
-
-.letter-spacing-extended-v {
-  letter-spacing: 1.1em;
-}
-
-.word-spacing {
-  word-spacing: 18px;
 }
 
 .lots {
@@ -170,35 +159,28 @@
 }
 
 .card {
+  position: relative;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
   padding: 51px 40px 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
-  z-index: 0;
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
-  z-index: 0;
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
-  z-index: 0;
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
@@ -242,15 +224,12 @@
   gap: 25px;
 }
 
-.about__logo-center {
-  padding-top: 35px;
-  padding-left: 47px;
-}
-
 .about__logo {
   display: flex;
+  justify-content: center;
   width: 240px;
   height: 240px;
+  margin: 35px auto;
   border-radius: 100%;
   background-color: #000;
 }
